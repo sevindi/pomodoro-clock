@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel="stylesheet" type="text/css" href="main.css" />
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+      <h1 class="title">POMODORO CLOCK</h1>
+      <div class="session-control">
+        <p id="session-label">SESSION LENGTH</p>
+        <button id="session-decrement" class="settingsBtn">-</button>
+        <p id="session-length" class="inline numbers"></p>
+        <button id="session-increment" class="settingsBtn">+</button>
+      </div>
+      <div class="break-control">
+        <p id="break-label">BREAK LENGTH</p>
+        <button id="break-decrement" class="settingsBtn">-</button>
+        <p id="break-length" class="inline numbers"></p>
+        <button id="break-increment" class="settingsBtn">+</button>
+      </div>
+      <div id="clock">
+        <h2 id="timer-label"></h2>
+        <p id="time-left" class="numbers"></p>
+        <button id="start" type="button" class="btn"><i class="fa fa-play"></i>START</button>
+        <button id="pause" type="button" class="btn"><i class="fa fa-pause"></i>PAUSE</button>
+        <button id="resume" type="button" class="btn"><i class="fa fa-play"></i>RESUME</button>
+        <button id="reset" type="button" class="btn"><i class="fa fa-refresh"></i>RESET</button>
+      </div>
+    </div>
+</body>
+
+</html>

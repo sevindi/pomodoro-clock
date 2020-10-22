@@ -1,0 +1,103 @@
+@import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  text-align: center;
+  user-select: none;
+}
+
+.container {
+  width: 700px;
+  height: 700px;
+  margin: 7em auto;
+  border: 3px solid;
+}
+.title {
+  font-size: 4.5em;
+  margin-bottom: 0.8em;
+  margin-top: 75px;
+}
+.session-control {
+  margin-left: 125px;
+  float: left;
+}
+
+.break-control {
+  margin-right: 125px;
+  float: right;
+}
+.inline {
+  display: inline;
+}
+.settingsBtn {
+  background-color: transparent;
+  font-size: 2.3em;
+  border: none;
+}
+.numbers {
+  font-size: 2.5em;
+  padding: 0.25em;
+}
+#clock {
+  margin: 175px auto;
+  width: 500px;
+}
+#clock h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+#clock .numbers {
+  font-size: 4em;
+}
+#time-left {
+  margin-bottom: 23px;
+}
+#pause,
+#resume {
+  display: none;
+}
+.btn,
+.settingsBtn {
+  outline: none;
+  cursor: pointer;
+}
+.btn {
+  background-color: transparent;
+  font-size: 1.1em;
+  border: 1px solid;
+  padding: 0.65em 0.5em 0.5em;
+  margin-left: 15px;
+}
+
+i {
+  margin-right: 15px;
+}
+@media (max-width: 750px) {
+  .container {
+    border: none;
+    width: 90vw;
+    margin-top: 0;
+    overflow: visible;
+  }
+  .timer-label {
+    margin-top: 30px;
+    font-size: 3em;
+  }
+  .session-control,
+  .break-control {
+    float: none;
+    margin: 0 0 2em;
+  }
+  #clock {
+    width: 90vw;
+    margin: 2em 0 0;
+  }
+  #clock h2 {
+    font-size: 2em;
+  }
+}
