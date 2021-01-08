@@ -8,6 +8,8 @@ body {
   height: 100%;
   font-family: 'IBM Plex Mono', monospace;
   text-align: center;
+  background-color: rgb(20, 21, 26);
+  color: rgb(202, 206, 211);
   user-select: none;
 }
 
@@ -63,13 +65,15 @@ body {
 }
 .btn,
 .settingsBtn {
+  color: rgb(202, 206, 211);
   outline: none;
   cursor: pointer;
 }
 .btn {
   background-color: transparent;
   font-size: 1.1em;
-  border: 1px solid;
+  color: rgb(202, 206, 211);
+  border: 1px solid rgb(202, 206, 211);
   padding: 0.65em 0.5em 0.5em;
   margin-left: 15px;
 }
